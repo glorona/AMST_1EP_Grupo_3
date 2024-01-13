@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewMat"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:gravity="center"
+        android:text="Aplicaciones móviles y servicios telemáticos"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewEval"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:gravity="center"
+        android:text="Examen práctico"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewNombres"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:gravity="center"
+        android:text="Gabriel Loroña, Josseline Astudillo y Jimmy Rodriguez."
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:gravity="center"
+        android:text="Busca tu Héroe!"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtHeroe"
+        android:layout_width="341dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:layout_gravity="clip_horizontal|center"
+        android:hint="Búsqueda por nombre"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="clip_horizontal"
+        android:width="100px"
+        android:onClick="buscar"
+        android:text="Buscar"
+        android:translationX="70dip"
+        app:backgroundTint="#0046F6" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="359dp"
+        android:layout_height="297dp"
+        android:layout_gravity="clip_horizontal|center"
+        app:srcCompat="@drawable/superman" />
+</LinearLayout>
